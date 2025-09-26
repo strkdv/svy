@@ -1,0 +1,165 @@
+body{
+    font-family: sans-serif;
+    font-weight: normal;
+
+    background-image: url(https://booketing.com/uvmicros/custom/venueids/1096295/assets/bg-savaya.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: pointer;
+}
+
+.headline img{
+    content: normal;
+    left: 0;
+    right: 0;
+    padding: auto;
+    margin-top: 1.7%;
+    width: 325px;
+}
+
+.location{
+    position: absolute;
+    top: 110px; /* Move it above the container */
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure it's above .landing-border */
+    width: fit-content
+}
+
+.location_jakarta{
+    position: absolute;
+    top: 60%; /* Move it above the container */
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure it's above .landing-border */
+    width: fit-content
+}
+
+.landing-border{
+    max-width: 1420px;
+    padding: 0em;
+    margin: auto;
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    height: auto;
+    gap: 3em;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-border {
+        background-position: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        width: 280.67px;
+        height: 312px;
+        max-width: var(--width-286_8, 286.8px);
+        max-height: var(--height-312, 312px);
+        padding: 14px ;
+        flex-direction: column;
+        gap: var(--item-spacing-14, 14px);
+        border-radius: 19.2px;
+        background: #FFF;
+        left: 0;
+        right: 0;
+        box-shadow: 14px 19px 33px 0 rgba(0, 0, 0, 0.10);
+}
+
+.card-content {
+    max-width : 254.67px;
+    flex-shrink: 0;
+    max-height: 238.65px;
+    width: 80%;
+    height: 80%;
+    align-self: center;
+    border-radius: 19.2px;
+}
+
+.text-content{
+    font-family: system-ui;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    position: relative  ;
+    height: auto;
+    align-content: flex-start;
+}
+
+.text-content img{
+    width: 24px;
+    height: 22px;
+    position: absolute;
+    right: 16.68px;
+    bottom: 20.685px;
+    transform: rotate(-45deg);
+}
+
+.card-text{
+    display: flex;
+    position: relative;
+    width: 160.46px;
+    height: 48.13px;
+    padding: 7.732px 0.01px 7.732px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.card-content .card-text{
+    position: relative;
+    justify-self: center;
+    background-position: bottom;
+    min-height: 85%;
+    background-repeat: no-repeat;
+}
+
+.watermark {
+    width: 100%;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.watermark img {
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/*animation*/
+.card-border {
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.card-border:hover {
+    transform: translateY(-20px);
+}
+
+.card-border .text-content img{
+    transition: transform .3s ease-out;
+}
+
+.card-border:hover .text-content img{
+    transform: rotate(0deg);
+}
+
+.card-border .card-text{
+    transition: transform .4s ease;
+    transform: scale(0.9);
+}
+
+.card-border:hover .card-text{
+    transform: scale(1);
+    transform: translateY(-15px);
+}
